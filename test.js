@@ -267,3 +267,8 @@ let imageAdded = users.map((user)=>{
 })
 console.log(imageAdded)
 
+
+// Deleting a user with the username "Elwyn.Skiles"
+let removeUserIndex = users.findIndex(user=>user.username == "Elwyn.Skiles")
+users.splice(removeUserIndex, 1)
+console.log(users)
