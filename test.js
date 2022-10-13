@@ -231,25 +231,32 @@ const users = [
     }
   ]
 
-// // Removing the id of every element
-// let noId = users.forEach((element)=>{
-//   delete element.id
-// })
+
+// Removing the id of every element
+let noId = users.forEach((element)=>{
+  delete element.id
+})
+console.log(users)
 
 
-// // Finding someone who works at `Robel-Corkery` company
-// let worker = users.find(element=>element.company.name == "Robel-Corkery")
-// console.log(worker);
+// Finding someone who works at `Robel-Corkery` company
+let worker = users.find(element=>element.company.name == "Robel-Corkery")
+console.log(worker)
 
-// // Sorting users by username
-// let sortedUsers = users.sort((a,b)=> {
-//   return a.username.localeCompare(b.username)
-// })
-// console.log(sortedUsers)
+
+// Sorting users by username
+let sortedUsers = users.sort((a,b)=> {
+  return a.username.localeCompare(b.username)
+})
+console.log(sortedUsers)
+
+
 
 // Finding users whose lat is greater than zero
-// let latGreaterThanZero = users.filter(user => user.address.geo.lat > 0)
-// console.log(latGreaterThanZero)
+let latGreaterThanZero = users.filter(user => user.address.geo.lat > 0)
+console.log(latGreaterThanZero)
+
+
 
 // Adding Image to each user and returning the whole user object with the image added
 let imageAdded = users.map((user)=>{
@@ -259,3 +266,4 @@ let imageAdded = users.map((user)=>{
   }
 })
 console.log(imageAdded)
+
